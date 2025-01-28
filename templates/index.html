@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Plant Plate: Sustainable, delicious vegetarian cuisine crafted from locally sourced ingredients.">
+    <meta name="keywords" content="vegetarian, sustainable food, locally sourced, plant-based, healthy meals">
+    <meta name="author" content="The Plant Plate">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <title>The Plant Plate</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Parkinsans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1, h2, h3 {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo h1 {
+            font-size: 8rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            font-family: 'Parkinsans', sans-serif;
+        }
+
+        header .logo p {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #388e3c;
+            padding: 1.2rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+            border-bottom: 2px solid #ffeb3b;
+            padding-bottom: 5px;
+            transition: 0.3s;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+            text-align: center;
+            padding: 10rem 2rem;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        section:hover {
+            transform: scale(1.05);
+        }
+
+        section h2 {
+            font-size: 3rem;
+            color: #388e3c;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        section p {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ffeb3b;
+        }
+
+        @media (max-width: 768px) {
+            header .logo h1 {
+                font-size: 2.8rem;
+            }
+
+            header .logo p {
+                font-size: 1.3rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                color: white;
+                font-weight: bold;
+                font-size: 1.2rem;
+                text-transform: capitalize;
+                position: relative;
+            }
+
+            nav ul li a.active,
+            nav ul li a:hover {
+                color: #ffeb3b;
+                border-bottom: 2px solid #ffeb3b;
+                padding-bottom: 5px;
+                transition: 0.3s;
+            }
+
+            nav ul li a.active {
+                background-color: #388e3c;
+                color: #ffeb3b;
+                border-radius: 5px;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            section h2 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>The Plant Plate</h1>
+            <p>Fresh, Local, Sustainable</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/" class="{{ 'active' if active_page == 'home' else '' }}">Home</a></li>
+            <li><a href="/menu" class="{{ 'active' if active_page == 'menu' else '' }}">Menu</a></li>
+            <li><a href="/about" class="{{ 'active' if active_page == 'about' else '' }}">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Our journey began with a passion for fresh, locally sourced vegetarian cuisine. At The Plant Plate, we believe in sustainability and quality. Every dish is carefully crafted with fresh, organic ingredients from local farmers, promoting both health and the environment.</p>
+            </section>
+
+            <section id="menu">
+                <h2>Our Menu</h2>
+                <p>Explore our delicious and nutritious vegetarian dishes, crafted with the freshest ingredients. From hearty salads to plant-based entrees, we have a wide selection to satisfy every palate. Eat well, live well.</p>
+            </section>
+
+            <section id="sustainability">
+                <h2>Sustainability Practices</h2>
+                <p>We are committed to eco-friendly practices, from our farm-to-table sourcing to our waste reduction initiatives. We minimize our environmental impact by working with local suppliers, reducing food waste, and using sustainable packaging.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Plant Plate. All rights reserved.</p>
+    </footer>
+</body>
+</html>

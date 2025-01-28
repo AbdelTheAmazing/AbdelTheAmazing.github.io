@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Plant Plate: Sustainable, delicious vegetarian cuisine crafted from locally sourced ingredients.">
+    <meta name="keywords" content="vegetarian, sustainable food, locally sourced, plant-based, healthy meals">
+    <meta name="author" content="The Plant Plate">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <title>About Us - The Plant Plate</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Parkinsans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1, h2, h3 {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo h1 {
+            font-size: 8rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            font-family: 'Parkinsans', sans-serif;
+        }
+
+        header .logo p {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #388e3c;
+            padding: 1.2rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+            border-bottom: 2px solid #ffeb3b;
+            padding-bottom: 5px;
+            transition: 0.3s;
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .about {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+        }
+
+        .about:hover {
+            transform: scale(1.05);
+        }
+
+        .about h2 {
+            font-size: 3rem;
+            color: #388e3c;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .about p, .about h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .about .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            background-color: #388e3c;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .about .button:hover {
+            background-color: #2e7d32;
+        }
+
+        .contact {
+            background-color: white;
+            padding: 3rem;
+            margin-top: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h2 {
+            font-size: 2.8rem;
+            color: #2e7d32;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .contact address {
+            font-style: normal;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .contact .social-links a {
+            margin-right: 25px;
+            font-size: 1.5rem;
+            color: #2e7d32;
+            transition: color 0.3s ease;
+        }
+
+        .contact .social-links a:hover {
+            color: #ffeb3b;
+        }
+
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Media Queries for responsive design */
+        @media (max-width: 768px) {
+            header .logo h1 {
+                font-size: 2.8rem;
+            }
+
+            header .logo p {
+                font-size: 1.3rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                font-size: 1.3rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .about, .contact {
+                padding: 2rem;
+            }
+
+            .about h2 {
+                font-size: 2.5rem;
+            }
+
+            .contact h2 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>The Plant Plate</h1>
+            <p>Fresh, Local, Sustainable</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="about" class="about">
+                <h2>About Us</h2>
+                <p>Welcome to The Plant Plate, where our journey began with a deep passion for fresh, locally sourced vegetarian cuisine. Our mission is to serve food that’s not only delicious but also kind to the environment and good for your health. Our meals are designed to leave you feeling nourished and inspired, with ingredients that speak for themselves.</p>
+                
+                <p>At The Plant Plate, we are committed to sustainability and quality in everything we do. We work closely with local farms to ensure our ingredients are fresh, organic, and ethically sourced. Our chefs create innovative, nutritious meals that cater to both your taste buds and your well-being. We're proud to say that everything we serve is plant-based and made with the highest quality ingredients.</p>
+
+                <h3>Our Philosophy</h3>
+                <p>We believe in the power of plants to nourish, heal, and sustain. Every meal is crafted with care, using the finest plant-based ingredients to bring out natural flavors and maximize nutrition. Whether you're a vegetarian, vegan, or simply looking for a healthier meal option, The Plant Plate offers something for everyone. Our dishes are designed to be vibrant, full of flavor, and made to share.</p>
+
+                <h3>Meet Our Team</h3>
+                <p>Our team is a group of passionate individuals who are dedicated to making the world a better place, one plate at a time. From our chefs to our service staff, everyone at The Plant Plate shares a common goal: to provide a delightful dining experience that supports local farmers and promotes sustainable living. We believe that food is more than just fuel — it's a way to connect with the community and the planet.</p>
+
+                <div class="button">Join Us On Our Journey</div>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Whether you have a question, want to book a table, or just want to say hello, reach out to us below.</p>
+
+                <address>
+                    <p>Email: <a href="mailto:info@theplantplate.com">info@theplantplate.com</a></p>
+                    <p>Phone: +123 456 789</p>
+                    <p>Address: 123 Green Street, City, State</p>
+                </address>
+
+                <div class="social-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Twitter</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Plant Plate. All rights reserved.</p>
+        <p>Website by <a href="https://www.sanaa.com" target="_blank">SANAA</a></p>
+    </footer>
+</body>
+</html>

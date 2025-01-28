@@ -1,0 +1,52 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: #68b684;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: #555;
+}
+nav a {
+    color: #fff;
+    padding: 1em;
+    text-decoration: none;
+}
+nav a:hover {
+    background: #444;
+}
+.hero {
+    background-image: url('../images/your-image.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3em;
+}
+.container {
+    padding: 2em;
+}
+.about, .menu, .sustainability, .contact {
+    margin: 2em 0;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}

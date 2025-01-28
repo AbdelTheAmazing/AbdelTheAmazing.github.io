@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Plant Plate: Sustainable, delicious vegetarian cuisine crafted from locally sourced ingredients.">
+    <meta name="keywords" content="vegetarian, sustainable food, locally sourced, plant-based, healthy meals">
+    <meta name="author" content="The Plant Plate">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <title>Menu - The Plant Plate</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Parkinsans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1, h2, h3 {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo h1 {
+            font-size: 8rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            font-family: 'Parkinsans', sans-serif;
+        }
+
+        header .logo p {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #388e3c;
+            padding: 1.2rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+            border-bottom: 2px solid #ffeb3b;
+            padding-bottom: 5px;
+            transition: 0.3s;
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .menu {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+        }
+
+        .menu:hover {
+            transform: scale(1.05);
+        }
+
+        .menu h2 {
+            font-size: 3rem;
+            color: #388e3c;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .menu ul li {
+            margin-bottom: 1rem;
+        }
+
+        .menu .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            background-color: #388e3c;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .menu .button:hover {
+            background-color: #2e7d32;
+        }
+
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ffeb3b;
+        }
+
+        @media (max-width: 768px) {
+            header .logo h1 {
+                font-size: 2.8rem;
+            }
+
+            header .logo p {
+                font-size: 1.3rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                font-size: 1.3rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .menu {
+                padding: 2rem;
+            }
+
+            .menu h2 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>The Plant Plate</h1>
+            <p>Fresh, Local, Sustainable</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+          <section id="menu" class="menu">
+            <h2>Our Menu</h2>
+            <p>Explore our selection of fresh, sustainable, plant-based dishes crafted from locally sourced ingredients. Each dish is designed to nourish your body and support a healthier planet.</p>
+        
+            <h3 style="font-size: 2rem; color: #388e3c; margin-top: 2rem;">Starters</h3>
+            <p>Start your meal with something fresh and light to excite your taste buds!</p>
+            <ul>
+                <li><strong>Fresh Garden Salad</strong> - $7.99
+                    <p>A refreshing mix of crisp greens, seasonal vegetables, and a light lemon vinaigrette dressing. Vegan and gluten-free.</p>
+                </li>
+                <li><strong>Vegan Stuffed Mushrooms</strong> - $8.99
+                    <p>Mushrooms stuffed with a savory mix of vegan cream cheese, garlic, and fresh herbs, baked to perfection.</p>
+                </li>
+                <li><strong>Hummus with Pita Bread</strong> - $6.99
+                    <p>A creamy blend of chickpeas, tahini, and lemon served with warm, freshly baked pita bread.</p>
+                </li>
+            </ul>
+            
+            <h3 style="font-size: 2rem; color: #388e3c; margin-top: 2rem;">Main Courses</h3>
+            <p>Our hearty main dishes are packed with flavor and perfect for a satisfying meal.</p>
+            <ul>
+                <li><strong>Grilled Vegetable Platter</strong> - $14.99
+                    <p>A medley of seasonal vegetables like zucchini, bell peppers, and mushrooms, grilled and served with a side of quinoa.</p>
+                </li>
+                <li><strong>Quinoa and Tofu Stir Fry</strong> - $13.49
+                    <p>Tofu and vegetables stir-fried in a savory soy-ginger sauce, served over a bed of quinoa for a protein-packed meal.</p>
+                </li>
+                <li><strong>Vegan Buddha Bowl</strong> - $12.99
+                    <p>A nutritious bowl filled with roasted sweet potatoes, chickpeas, spinach, avocado, and a tahini dressing.</p>
+                </li>
+            </ul>
+        
+            <h3 style="font-size: 2rem; color: #388e3c; margin-top: 2rem;">Desserts</h3>
+            <p>Finish your meal on a sweet note with our delicious vegan desserts!</p>
+            <ul>
+                <li><strong>Vegan Chocolate Cake</strong> - $5.99
+                    <p>A rich and moist chocolate cake made without eggs or dairy, topped with a creamy vegan ganache.</p>
+                </li>
+                <li><strong>Raw Cashew Cheesecake</strong> - $6.49
+                    <p>A decadent no-bake cheesecake made with raw cashews and a coconut crust, served with a berry compote.</p>
+                </li>
+                <li><strong>Coconut Macaroons</strong> - $4.99
+                    <p>Sweet coconut macaroons, chewy on the inside and lightly golden on the outside.</p>
+                </li>
+            </ul>
+        
+            <h3 style="font-size: 2rem; color: #388e3c; margin-top: 2rem;">Drinks</h3>
+            <p>Refresh yourself with our organic, freshly-made beverages!</p>
+            <ul>
+                <li><strong>Organic Herbal Tea</strong> - $3.49
+                    <p>A calming blend of organic herbs, perfect for relaxing after a delicious meal.</p>
+                </li>
+                <li><strong>Freshly Squeezed Orange Juice</strong> - $4.49
+                    <p>Cold-pressed from fresh, juicy oranges, served chilled.</p>
+                </li>
+                <li><strong>Cold Brew Coffee</strong> - $4.99
+                    <p>Smooth, refreshing cold brew coffee made from high-quality beans and served over ice.</p>
+                </li>
+            </ul>
+        </section>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Plant Plate. All rights reserved.</p>
+        <p>Website by <a href="https://www.sanaa.com" target="_blank">SANAA</a></p>
+    </footer>
+</body>
+</html>
